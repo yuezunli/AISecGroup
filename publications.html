@@ -1,403 +1,442 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
-      <meta charset="utf-8">
-      <title>Home</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="research lab" content="UBMDFL">
-      <meta name="author" content="credit: https://github.com/photonlines/Research-Lab-Website">
-      <!-- Le styles -->
-      <link href="css/bootstrap.min.css" rel="stylesheet">
-      <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-      <link href="css/theme.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="research lab" content="UBMDFL">
+    <meta name="author" content="credit: https://github.com/photonlines/Research-Lab-Website">
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
 
-      <style>
-            div.noshow { display: none; }
-            div.bibtex {
-                  margin-right: 10%;
-                  margin-top: 1em;
-                  margin-bottom: 1em;
-                  padding: 0.2em 0.5em;
-                  background: #F8F9F9;
-            }
-            div.bibtex pre { font-family: Arial; overflow: auto;  width: 100%; padding: 0em 0em;}
-            </style> 
-            
-            <script type="text/javascript">
-                // Toggle Display of BibTeX
-                function toggleBibtex(articleid) {
-                    var bib = document.getElementById('bib_'+articleid);
-                    if (bib) {
-                        if(bib.className.indexOf('bibtex') != -1) {
-                            bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
-                        }
-                    } else {
-                        return;
-                    }
-                }
-            </script>
+    <style>
+        div.noshow {
+            display: none;
+        }
+
+        div.bibtex {
+            margin-right: 10%;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            padding: 0.2em 0.5em;
+            background: #F8F9F9;
+        }
+
+        div.bibtex pre {
+            font-family: Arial;
+            overflow: auto;
+            width: 100%;
+            padding: 0em 0em;
+        }
+    </style>
+
+    <script type="text/javascript">
+      // Toggle Display of BibTeX
+      function toggleBibtex(articleid) {
+        var bib = document.getElementById('bib_' + articleid);
+        if (bib) {
+          if (bib.className.indexOf('bibtex') != -1) {
+            bib.className.indexOf('noshow') == -1 ? bib.className = 'bibtex noshow' : bib.className = 'bibtex';
+          }
+        } else {
+          return;
+        }
+      }
+    </script>
 </head>
 
 <body>
-      <div class="container">
-            <header class="jumbotron subhead" id="overview">
-                  <p class="lead">
-                  <h2>Welcome to AI Security Group (AISec) @ OUC</h2>
-                  </p>
-            </header>
-            <div class="masthead">
-                  <div class="navbar">
-                        <div class="navbar-inner">
-                              <div class="container">
-                                    <ul class="nav">
-                                          <li><a href="index.html">Home</a></li>
-                                          <li><a href="people.html">People</a></li>
-                                          <li><a href="research.html">Research</a></li>
-                                          <li class="active"><a href="#">Publications</a></li>
-                                          <li><a href="downloads.html">Downloads</a></li>
-                                          <li><a href="news.html">News</a></li>
-                                          <li><a href="contact.html">Contact</a></li>
-                                    </ul>
-                              </div>
-                        </div>
-                  </div>
+<div class="container">
+    <p style="text-align:right">
+        <a href="en/publications.html">[English]</a>
+        <a href="publications.html">[中文版]</a>
+     </p>  
+    <header class="jumbotron subhead" id="overview">
+        <p class="lead">
+        <h2>欢迎来到人工智能安全小组 @ OUC</h2>
+        Welcome to AI Security Group (AISec) @ OUC
+        </p>
+    </header>
+    <div class="masthead">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <ul class="nav">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="people.html">成员</a></li>
+                        <li><a href="research.html">研究方向</a></li>
+                        <li class="active"><a href="#">研究成果</a></li>
+                        <li><a href="downloads.html">下载</a></li>
+                        <li><a href="news.html">新闻</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
             </div>
-            <hr>
-            <div class="row-fluid">
-                  <div class="span3 bs-docs-sidebar" id="navparent">
-                        <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200"
-                              data-offset-bottom="260">
-                              <li><a href="#DMF">Multimedia Forensics</a></li>
-                              <li><a href="#ML">DNN Security</a></li>
-                              <li><a href="#CV">Computer Vision</a></li>
-                        </ul>
-                  </div>
-                  <div class="span8 offset1">
-                        <section id="DMF">
-                              <div class="page-header">
-                                    <h3>Multimedia Forensics</h3>
-                                    <p style="font-size:8px;">* Equal contribution, # Corresponding author.</p>
-                                    <hr>
-                                    <ul>
-                                        <li>
-                                            <a href="">Learning a Deep Dual-level Network for Robust DeepFake Detection</a><br>
-                                            Wenbo Pu, Jing Hu, Xin Wang, <u>Yuezun Li</u>, Shu Hu, Bin Zhu, Qi Song, Xi Wu and Siwei Lyu.
-                                            Pattern Recognition (PR), 2022. [CCF B][JCR Q1]
-                                        </li>
-                                        
-                                        <li>
-                                            <a href="">Detection-by-Simulation: Exposing DeepFake via Simulating Forgery using Face Reconstruction</a><br>
-                                            Jiaran Zhou and <u>Yuezun Li</u><sup>#</sup>.
-                                            IEEE International Conference on Multimedia Information Processing and Retrieval (MIPR), 2022. 
-                                        </li>
+        </div>
+    </div>
+    <hr>
+    <div class="row-fluid">
+        <div class="span3 bs-docs-sidebar" id="navparent">
+            <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200"
+                data-offset-bottom="260">
+                <li><a href="#DMF">多媒体取证</a></li>
+                <li><a href="#ML">DNN 安全</a></li>
+                <li><a href="#CV">计算机视觉</a></li>
+            </ul>
+        </div>
+        <div class="span8 offset1">
+            <section id="DMF">
+                <div class="page-header">
+                    <h3>多媒体取证</h3>
+                    <p style="font-size:8px;">* 同等贡献, # 通讯作者</p>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="">Learning a Deep Dual-level Network for Robust DeepFake Detection</a><br>
+                            Wenbo Pu, Jing Hu, Xin Wang, <u>Yuezun Li</u>, Shu Hu, Bin Zhu, Qi Song, Xi Wu and Siwei
+                            Lyu.
+                            Pattern Recognition (PR), 2022. [CCF B][JCR Q1]
+                        </li>
 
-                                        <li>
-                                            [Book Chapter 4] <a
-                                                    href="https://link.springer.com/content/pdf/10.1007%2F978-3-030-87664-7.pdf">
-                                                    Toward the Creation and Obstruction of DeepFakes</a>.  
-                                            <u>Yuezun Li</u>, Pu Sun, Honggang Qi and Siwei Lyu.
-                                            Handbook of Digital Face Manipulation and Detection, 2022. Springer.
-                                        </li>
+                        <li>
+                            <a href="">Detection-by-Simulation: Exposing DeepFake via Simulating Forgery using Face
+                                Reconstruction</a><br>
+                            Jiaran Zhou and <u>Yuezun Li</u><sup>#</sup>.
+                            IEEE International Conference on Multimedia Information Processing and Retrieval (MIPR),
+                            2022.
+                        </li>
 
-                                        <li>
-                                            [Book Chapter 12] <a
-                                                    href="https://www.springerprofessional.de/en/obstructing-deepfakes-by-disrupting-face-detection-and-facial-la/19574402">
-                                                    Obstructing DeepFakes by Disrupting Face Detection and Facial
-                                                    Landmarks Extraction</a>. 
-                                            <u>Yuezun Li</u>, Siwei Lyu.
-                                            Deep Learning-Based Face Analytics, 2021. Springer.
-                                        </li>
-                                        <li>
-                                            <a href="">DFGC 2021: A DeepFake Game Competition</a>. 
-                                            Bo Peng, Hongxing Fan, Wei Wang, Jing Dong, <u>Yuezun Li</u>, Siwei Lyu, etc.
-                                            International Joint Conference on Biometrics (IJCB), 2021. [CCF C]
-                                        </li>
-                                        <li>
-                                            <a href="">DeepFake-o-meter: An Open Platform for DeepFake Detection</a>. 
-                                            <u>Yuezun Li</u>,Cong Zhang, Pu Sun, Lipeng Ke, Yan Ju, Honggang Qi and Siwei Lyu.
-                                            Systematic Approaches to Digital Forensic Engineering, in conjunction with the IEEE Security and Privacy Smposium (S&P), 2021. 
-                                        </li>
-                                    
-                                        <li>
-                                            <a href="">Imperceptible Adversarial Examples For Fake Image Detection.</a>. 
-                                            Quanyu Liao, <u>Yuezun Li</u>, Xin Wang, Bin Kong, Bin Zhu, Siwei Lyu, Youbing Yin, Qi Song and Xi Wu.
-                                            IEEE Conference on Image Processing (ICIP), 2021. [CCF C]
-                                        </li>
-                                        <li>
-                                            <a href="https://arxiv.org/pdf/2009.11924.pdf">Exposing GAN-generated Faces Using Inconsistent Corneal Specular Highlights</a>. 
-                                            Shu Hu, <u>Yuezun Li</u> and Siwei Lyu.
-                                            IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2021. [CCF B]
-                                            [<a href="javascript:toggleBibtex('yang2019headpose')">Bibtex</a>]
-                                            <div id="bib_yang2019headpose" class="bibtex noshow">
+                        <li>
+                            [Book Chapter 4] <a
+                                href="https://link.springer.com/content/pdf/10.1007%2F978-3-030-87664-7.pdf">
+                            Toward the Creation and Obstruction of DeepFakes</a>.
+                            <u>Yuezun Li</u>, Pu Sun, Honggang Qi and Siwei Lyu.
+                            Handbook of Digital Face Manipulation and Detection, 2022. Springer.
+                        </li>
+
+                        <li>
+                            [Book Chapter 12] <a
+                                href="https://www.springerprofessional.de/en/obstructing-deepfakes-by-disrupting-face-detection-and-facial-la/19574402">
+                            Obstructing DeepFakes by Disrupting Face Detection and Facial
+                            Landmarks Extraction</a>.
+                            <u>Yuezun Li</u>, Siwei Lyu.
+                            Deep Learning-Based Face Analytics, 2021. Springer.
+                        </li>
+                        <li>
+                            <a href="">DFGC 2021: A DeepFake Game Competition</a>.
+                            Bo Peng, Hongxing Fan, Wei Wang, Jing Dong, <u>Yuezun Li</u>, Siwei Lyu, etc.
+                            International Joint Conference on Biometrics (IJCB), 2021. [CCF C]
+                        </li>
+                        <li>
+                            <a href="">DeepFake-o-meter: An Open Platform for DeepFake Detection</a>.
+                            <u>Yuezun Li</u>,Cong Zhang, Pu Sun, Lipeng Ke, Yan Ju, Honggang Qi and Siwei Lyu.
+                            Systematic Approaches to Digital Forensic Engineering, in conjunction with the IEEE Security
+                            and Privacy Smposium (S&P), 2021.
+                        </li>
+
+                        <li>
+                            <a href="">Imperceptible Adversarial Examples For Fake Image Detection.</a>.
+                            Quanyu Liao, <u>Yuezun Li</u>, Xin Wang, Bin Kong, Bin Zhu, Siwei Lyu, Youbing Yin, Qi Song
+                            and Xi Wu.
+                            IEEE Conference on Image Processing (ICIP), 2021. [CCF C]
+                        </li>
+                        <li>
+                            <a href="https://arxiv.org/pdf/2009.11924.pdf">Exposing GAN-generated Faces Using
+                                Inconsistent Corneal Specular Highlights</a>.
+                            Shu Hu, <u>Yuezun Li</u> and Siwei Lyu.
+                            IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2021.
+                            [CCF B]
+                            [<a href="javascript:toggleBibtex('yang2019headpose')">Bibtex</a>]
+                            <div id="bib_yang2019headpose" class="bibtex noshow">
                                             <pre>@inproceedings{hu2021corneal,
                                                 author={Hu, Shu and Li, Yuezun and Lyu, Siwei},
                                                 title={Exposing GAN-generated Faces Using Inconsistent Corneal Specular Highlights},
                                                 booktitle={IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
                                                 year={2021}}
                                             </pre>
-                                            </div> 	
-                                            [<a href="https://cse.buffalo.edu/ubmdfl/projects/GAN_detect_iris/GAN_Iris.html">Project page</a>]	 
-                                        </li>
-                                        
-                                        
-                                        <li>
-                                            <a href="">Landmark Breaker: Obstructing DeepFake By Disturbing Landmark Extraction</a>. 
-                                            Pu Sun<sup>*</sup>, <u>Yuezun Li</u><sup>*</sup>, Honggang Qi and Siwei Lyu.
-                                            IEEE International Workshop on Information Forensics and Security (WIFS), 2020. 
-                                            [<a href="javascript:toggleBibtex('sun2020landmarkbreaker')">Bibtex</a>]
-                                            <div id="bib_sun2020landmarkbreaker" class="bibtex noshow">
+                            </div>
+                            [<a href="https://cse.buffalo.edu/ubmdfl/projects/GAN_detect_iris/GAN_Iris.html">Project
+                            page</a>]
+                        </li>
+
+
+                        <li>
+                            <a href="">Landmark Breaker: Obstructing DeepFake By Disturbing Landmark Extraction</a>.
+                            Pu Sun<sup>*</sup>, <u>Yuezun Li</u><sup>*</sup>, Honggang Qi and Siwei Lyu.
+                            IEEE International Workshop on Information Forensics and Security (WIFS), 2020.
+                            [<a href="javascript:toggleBibtex('sun2020landmarkbreaker')">Bibtex</a>]
+                            <div id="bib_sun2020landmarkbreaker" class="bibtex noshow">
                                             <pre>@inproceedings{sun2020landmarkbreaker,
                                                     author = {Pu Sun and Yuezun Li and Honggang Qi and Siwei Lyu},
                                                     title = {Landmark Breaker: Obstructing DeepFake By Disturbing Landmark Extraction},
                                                     booktitle= {IEEE International Workshop on Information Forensics and Security (WIFS)},
                                                     year = {2020}}
                                             </pre>
-                                            </div>
-                                        </li>
+                            </div>
+                        </li>
 
-                                        <li>
-                                            <a href="https://arxiv.org/pdf/1909.12962.pdf">Celeb-DF: A Large-scale Challenging Dataset for DeepFake Forensics</a>. 
-                                            <u>Yuezun Li</u>, Xin Yang, Pu Sun, Honggang Qi and Siwei Lyu.
-                                            IEEE International Conference on Computer Vision and Pattern Recognition (CVPR), 2020. [CCF A]
-                                            [<a href="javascript:toggleBibtex('Celeb_DF_cvpr20')">Bibtex</a>]
-                                            <div id="bib_Celeb_DF_cvpr20" class="bibtex noshow">
+                        <li>
+                            <a href="https://arxiv.org/pdf/1909.12962.pdf">Celeb-DF: A Large-scale Challenging Dataset
+                                for DeepFake Forensics</a>.
+                            <u>Yuezun Li</u>, Xin Yang, Pu Sun, Honggang Qi and Siwei Lyu.
+                            IEEE International Conference on Computer Vision and Pattern Recognition (CVPR), 2020. [CCF
+                            A]
+                            [<a href="javascript:toggleBibtex('Celeb_DF_cvpr20')">Bibtex</a>]
+                            <div id="bib_Celeb_DF_cvpr20" class="bibtex noshow">
                                             <pre>@inproceedings{Celeb_DF_cvpr20,
                                                     author = {Yuezun Li and Xin Yang and Pu Sun and Honggang Qi and Siwei Lyu},
                                                     title = {Celeb-DF: A Large-scale Challenging Dataset for DeepFake Forensics},
                                                     booktitle= {IEEE Conference on Computer Vision and Patten Recognition (CVPR)},
                                                     year = {2020}}
                                             </pre>
-                                            </div>
-                                            [<i class="fas fa-download"></i><a href="https://forms.gle/QpoPFy6T9vHmPUQdA">Celeb-DF dataset</a>]
-                                        </li>
-                                        <li>
-                                            <a href="http://openaccess.thecvf.com/content_CVPRW_2019/papers/Media%20Forensics/Li_Exposing_DeepFake_Videos_By_Detecting_Face_Warping_Artifacts_CVPRW_2019_paper.pdf">Exposing DeepFake Videos By Detecting Face Warping Artifacts</a>. 
-                                            <u>Yuezun Li</u> and Siwei Lyu.
-                                            IEEE International Conference on Computer Vision and Pattern Recognition Workshop (CVPRW), 2019. 	
-                                            [<a href="javascript:toggleBibtex('li2019fwa')">Bibtex</a>]
-                                            <div id="bib_li2019fwa" class="bibtex noshow">
+                            </div>
+                            [<i class="fas fa-download"></i><a href="https://forms.gle/QpoPFy6T9vHmPUQdA">Celeb-DF
+                            dataset</a>]
+                        </li>
+                        <li>
+                            <a href="http://openaccess.thecvf.com/content_CVPRW_2019/papers/Media%20Forensics/Li_Exposing_DeepFake_Videos_By_Detecting_Face_Warping_Artifacts_CVPRW_2019_paper.pdf">Exposing
+                                DeepFake Videos By Detecting Face Warping Artifacts</a>.
+                            <u>Yuezun Li</u> and Siwei Lyu.
+                            IEEE International Conference on Computer Vision and Pattern Recognition Workshop (CVPRW),
+                            2019.
+                            [<a href="javascript:toggleBibtex('li2019fwa')">Bibtex</a>]
+                            <div id="bib_li2019fwa" class="bibtex noshow">
                                             <pre>@inproceedings{li2019fwa,
                                                 author={Li, Yuezun and Lyu, Siwei},
                                                 title={Exposing DeepFake Videos By Detecting Face Warping Artifacts},
                                                 booktitle={IEEE International Conference on Computer Vision and Pattern Recognition Workshop (CVPRW)},
                                                 year={2019}}
                                             </pre>
-                                            </div>
-                                            [<a href="https://github.com/danmohaha/CVPRW2019_Face_Artifacts">Code</a>]
-                                        </li>	
-                                        <li>
-                                            <a href="">De-identification Without Losing Faces</a>. 
-                                            <u>Yuezun Li</u> and Siwei Lyu.
-                                            ACM Workshop on Information Hiding and Multimedia Security (IHMMSec), 2019. [CCF C]
-                                            [<a href="javascript:toggleBibtex('li2019deid')">Bibtex</a>]
-                                            <div id="bib_li2019deid" class="bibtex noshow">
+                            </div>
+                            [<a href="https://github.com/danmohaha/CVPRW2019_Face_Artifacts">Code</a>]
+                        </li>
+                        <li>
+                            <a href="">De-identification Without Losing Faces</a>.
+                            <u>Yuezun Li</u> and Siwei Lyu.
+                            ACM Workshop on Information Hiding and Multimedia Security (IHMMSec), 2019. [CCF C]
+                            [<a href="javascript:toggleBibtex('li2019deid')">Bibtex</a>]
+                            <div id="bib_li2019deid" class="bibtex noshow">
                                             <pre>@inproceedings{li2019deid,
                                                 author={Li, Yuezun and Lyu, Siwei},
                                                 title={De-identification Without Losing Faces},
                                                 booktitle={ACM Workshop on Information Hiding and Multimedia Security (IHMMSec)},
                                                 year={2019}}
                                             </pre>
-                                            </div> 		
-                                        </li>
-                                        <li>
-                                            <a href="">Exposing GAN-synthesized Faces Using Landmark Locations</a>. 
-                                            Xin Yang, <u>Yuezun Li</u>, Honggang Qi and Siwei Lyu.
-                                            ACM Workshop on Information Hiding and Multimedia Security (IHMMSec), 2019. [CCF C] 
-                                            [<a href="javascript:toggleBibtex('yang2019exposinggan')">Bibtex</a>]
-                                            <div id="bib_yang2019exposinggan" class="bibtex noshow">
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">Exposing GAN-synthesized Faces Using Landmark Locations</a>.
+                            Xin Yang, <u>Yuezun Li</u>, Honggang Qi and Siwei Lyu.
+                            ACM Workshop on Information Hiding and Multimedia Security (IHMMSec), 2019. [CCF C]
+                            [<a href="javascript:toggleBibtex('yang2019exposinggan')">Bibtex</a>]
+                            <div id="bib_yang2019exposinggan" class="bibtex noshow">
                                             <pre>@inproceedings{yang2019exposinggan,
                                                 author={Yang, Xin and Li, Yuezun and Qi, Honggang and Lyu, Siwei},
                                                 title={Exposing GAN-synthesized Faces Using Landmark Locations},
                                                 booktitle={ACM Workshop on Information Hiding and Multimedia Security (IHMMSec)},
                                                 year={2019}}
                                             </pre>
-                                            </div> 		
-                                        </li>
-                                        <li>
-                                            <a href="https://arxiv.org/pdf/1811.00661.pdf">Exposing Deep Fakes Using Inconsistent Head Poses</a>. 
-                                            Xin Yang<sup>*</sup>, <u>Yuezun Li</u><sup>*</sup> and Siwei Lyu.
-                                            IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2019. [CCF B]
-                                            [<a href="javascript:toggleBibtex('yang2019headpose')">Bibtex</a>]
-                                            <div id="bib_yang2019headpose" class="bibtex noshow">
+                            </div>
+                        </li>
+                        <li>
+                            <a href="https://arxiv.org/pdf/1811.00661.pdf">Exposing Deep Fakes Using Inconsistent Head
+                                Poses</a>.
+                            Xin Yang<sup>*</sup>, <u>Yuezun Li</u><sup>*</sup> and Siwei Lyu.
+                            IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2019.
+                            [CCF B]
+                            [<a href="javascript:toggleBibtex('yang2019headpose')">Bibtex</a>]
+                            <div id="bib_yang2019headpose" class="bibtex noshow">
                                             <pre>@inproceedings{yang2019headpose,
                                                 author={Yang, Xin and Li, Yuezun and Lyu, Siwei},
                                                 title={Exposing GAN-synthesized Faces Using Landmark Locations},
                                                 booktitle={IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
                                                 year={2019}}
                                             </pre>
-                                            </div> 	
-                                            [<a href="https://bitbucket.org/ericyang3721/headpose_forensic/src/master/">Code</a>]		
-                                        </li>
-                                        <li>
-                                            <a href="https://arxiv.org/pdf/1806.02877.pdf">In Ictu Oculi: Exposing AI Generated Fake Face Videos by Detecting Eye Blinking</a>. 
-                                            <u>Yuezun Li</u>, Ming-Ching Chang and Siwei Lyu.
-                                            IEEE International Workshop on Information Forensics and Security (WIFS), 2018. 
-                                            [<a href="javascript:toggleBibtex('li2018ictu')">Bibtex</a>]
-                                            <div id="bib_li2018ictu" class="bibtex noshow">
+                            </div>
+                            [<a href="https://bitbucket.org/ericyang3721/headpose_forensic/src/master/">Code</a>]
+                        </li>
+                        <li>
+                            <a href="https://arxiv.org/pdf/1806.02877.pdf">In Ictu Oculi: Exposing AI Generated Fake
+                                Face Videos by Detecting Eye Blinking</a>.
+                            <u>Yuezun Li</u>, Ming-Ching Chang and Siwei Lyu.
+                            IEEE International Workshop on Information Forensics and Security (WIFS), 2018.
+                            [<a href="javascript:toggleBibtex('li2018ictu')">Bibtex</a>]
+                            <div id="bib_li2018ictu" class="bibtex noshow">
                                             <pre>@inproceedings{li2018ictu,
                                                     title={In Ictu Oculi: Exposing AI Generated Fake Face Videos by Detecting Eye Blinking},
                                                     author={Li, Yuezun and Chang, Ming-Ching and Lyu, Siwei},
                                                     Booktitle={IEEE International Workshop on Information Forensics and Security (WIFS)},
                                                     year={2018}}
                                             </pre>
-                                            </div> 
-                                            [<a href="https://github.com/danmohaha/WIFS2018_In_Ictu_Oculi">Code</a>][<i class="fas fa-download"></i><a href="https://forms.gle/fx6m5PXug99MqJRL9">UADFV dataset</a>]
-                                            
-                                        
-                                        </li>
-                                        
-                              </div>
-                        </section>
+                            </div>
+                            [<a href="https://github.com/danmohaha/WIFS2018_In_Ictu_Oculi">Code</a>][<i
+                                class="fas fa-download"></i><a href="https://forms.gle/fx6m5PXug99MqJRL9">UADFV
+                            dataset</a>]
 
-                        <section id="ML">
-                              <div class="page-header">
-                                    <h3>DNN Security</h3>
-                                    <hr>
-                                    <ul>
-                                          <li>
-                                                <a href="">TransRPN: Towards the Transferable Adversarial Perturbations Using Region Proposal Networks and Beyond</a>
-                                                <u>Yuezun Li</u>, Ming-Ching Chang, Pu Sun, Honggang Qi, Junyu Dong and Siwei Lyu.
-                                                International Journal on Computer Vision and Image Understanding (CVIU), 2021. [CCF B]
-                                            </li>
-                                            <li>
-                                                <a href="">Invisible Backdoor Attack with Sample-Specific Triggers</a>. 
-                                                <u>Yuezun Li</u>, Yiming Li, Baoyuan Wu, Longkang Li, Ran He and Siwei Lyu.
-                                                IEEE International Conference on Computer Vision (ICCV), 2021. [CCF A]
-                                            </li>
-                                            <li>
-                                                <a href="">Exploring the Vulnerability of Single Shot Module in Object Detectors via Imperceptible Background Patches</a>. 
-                                                <u>Yuezun Li</u>, Xiao Bian, Ming-Ching Chang and Siwei Lyu.
-                                                The British Machine Vision Conference (BMVC), 2019. [CCF C]
-                                                [<a href="javascript:toggleBibtex('li2019ibp')">Bibtex</a>]
-                                                <div id="bib_li2019ibp" class="bibtex noshow">
+
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="ML">
+                <div class="page-header">
+                    <h3>DNN 安全</h3>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="">TransRPN: Towards the Transferable Adversarial Perturbations Using Region
+                                Proposal Networks and Beyond</a>
+                            <u>Yuezun Li</u>, Ming-Ching Chang, Pu Sun, Honggang Qi, Junyu Dong and Siwei Lyu.
+                            International Journal on Computer Vision and Image Understanding (CVIU), 2021. [CCF B]
+                        </li>
+                        <li>
+                            <a href="">Invisible Backdoor Attack with Sample-Specific Triggers</a>.
+                            <u>Yuezun Li</u>, Yiming Li, Baoyuan Wu, Longkang Li, Ran He and Siwei Lyu.
+                            IEEE International Conference on Computer Vision (ICCV), 2021. [CCF A]
+                        </li>
+                        <li>
+                            <a href="">Exploring the Vulnerability of Single Shot Module in Object Detectors via
+                                Imperceptible Background Patches</a>.
+                            <u>Yuezun Li</u>, Xiao Bian, Ming-Ching Chang and Siwei Lyu.
+                            The British Machine Vision Conference (BMVC), 2019. [CCF C]
+                            [<a href="javascript:toggleBibtex('li2019ibp')">Bibtex</a>]
+                            <div id="bib_li2019ibp" class="bibtex noshow">
                                                 <pre>@inproceedings{li2019ibp,
                                                     author={Li, Yuezun and Bian, Xiao and Chang, Mingching and Lyu, Siwei},
                                                     title={Exploring the Vulnerability of Single Shot Module in Object Detectors via Imperceptible Background Patches},
                                                     booktitle={The British Machine Vision Conference (BMVC)},
                                                     year={2019}}
                                                 </pre>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <a href="">Robust Adversarial Perturbation on Deep Proposal-based Models</a>. 
-                                                <u>Yuezun Li</u>, Daniel Tian, Ming-Ching Chang, Xiao Bian and Siwei Lyu.
-                                                The British Machine Vision Conference (BMVC), 2018. [CCF C]
-                                                [<a href="javascript:toggleBibtex('li2018rap')">Bibtex</a>]
-                                                <div id="bib_li2018rap" class="bibtex noshow">
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">Robust Adversarial Perturbation on Deep Proposal-based Models</a>.
+                            <u>Yuezun Li</u>, Daniel Tian, Ming-Ching Chang, Xiao Bian and Siwei Lyu.
+                            The British Machine Vision Conference (BMVC), 2018. [CCF C]
+                            [<a href="javascript:toggleBibtex('li2018rap')">Bibtex</a>]
+                            <div id="bib_li2018rap" class="bibtex noshow">
                                                 <pre>@inproceedings{li2018rap,
                                                         author={Li, Yuezun and Tian, Daniel and Chang, Mingching and Bian, Xiao and Lyu, Siwei},
                                                         title={Robust Adversarial Perturbation on Deep Proposal-based Models},
                                                         booktitle={BMVC},
                                                         year={2018}}
                                                 </pre>
-                                                </div> 	
-                                                [<a href="https://github.com/danmohaha/BMVC2018R-AP">Code</a>]
-                                            </li>
-                                    </ul> 
+                            </div>
+                            [<a href="https://github.com/danmohaha/BMVC2018R-AP">Code</a>]
+                        </li>
+                    </ul>
 
-                              </div>
-                        </section>
+                </div>
+            </section>
 
-                        <section id="CV">
-                              <div class="page-header">
-                                    <h3>Computer Vision</h3>
-                                    <hr>
-                                    <ul>
-                                          <li>
-                                                <a href="">Robust Scene Parsing by Mining Supportive Knowledge from Dataset</a>. 
-                                                Ao Luo, Fan Yang, Xin Li, <u>Yuezun Li</u>, Zhicheng Jiao, Hong Cheng, and Siwei Lyu.
-                                                IEEE Transactions on Neural Networks and Learning Systems (TNNLS), 2021. [CCF B]
-                                            </li>    
-                                            <li>
-                                                <a href="">Fast Portrait Segmentation with Highly Light-weight Network</a>. 
-                                                <u>Yuezun Li</u><sup>*</sup>, Ao Luo<sup>*</sup> and Siwei Lyu.
-                                                IEEE International Conference on Image Processing (ICIP), 2020. [CCF C]
-                                                [<a href="javascript:toggleBibtex('li2020fastseg')">Bibtex</a>]
-                                                <div id="bib_li2020fastseg" class="bibtex noshow">
+            <section id="CV">
+                <div class="page-header">
+                    <h3>计算机视觉</h3>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="">Robust Scene Parsing by Mining Supportive Knowledge from Dataset</a>.
+                            Ao Luo, Fan Yang, Xin Li, <u>Yuezun Li</u>, Zhicheng Jiao, Hong Cheng, and Siwei Lyu.
+                            IEEE Transactions on Neural Networks and Learning Systems (TNNLS), 2021. [CCF B]
+                        </li>
+                        <li>
+                            <a href="">Fast Portrait Segmentation with Highly Light-weight Network</a>.
+                            <u>Yuezun Li</u><sup>*</sup>, Ao Luo<sup>*</sup> and Siwei Lyu.
+                            IEEE International Conference on Image Processing (ICIP), 2020. [CCF C]
+                            [<a href="javascript:toggleBibtex('li2020fastseg')">Bibtex</a>]
+                            <div id="bib_li2020fastseg" class="bibtex noshow">
                                                 <pre>@inproceedings{li2020fastseg,
                                                         author = {Yuezun Li and Ao Luo and Siwei Lyu},
                                                         title = {Fast Portrait Segmentation with Highly Light-weight Network},
                                                         booktitle= {IEEE International Conference on Image Processing (ICIP)},
                                                         year = {2020}}
                                                 </pre>
-                                                </div>
-                                            </li>
+                            </div>
+                        </li>
 
-                                            <li>
-                                                <a href="">Graph-to-Graph Energy Minimization for Video Object Segmentation</a>. 
-                                                <u>Yuezun Li</u><sup>*</sup>, Longyin Wen<sup>*</sup>, Ming-Ching Chang and Siwei Lyu.
-                                                IEEE International Conference on Advanced Video and Signal-based Surveillance (AVSS), 2019. (Oral)
-                                                [<a href="javascript:toggleBibtex('li2019g2gvos')">Bibtex</a>]
-                                                <div id="bib_li2019g2gvos" class="bibtex noshow">
+                        <li>
+                            <a href="">Graph-to-Graph Energy Minimization for Video Object Segmentation</a>.
+                            <u>Yuezun Li</u><sup>*</sup>, Longyin Wen<sup>*</sup>, Ming-Ching Chang and Siwei Lyu.
+                            IEEE International Conference on Advanced Video and Signal-based Surveillance (AVSS), 2019.
+                            (Oral)
+                            [<a href="javascript:toggleBibtex('li2019g2gvos')">Bibtex</a>]
+                            <div id="bib_li2019g2gvos" class="bibtex noshow">
                                                 <pre>@inproceedings{li2019g2gvos,
                                                     author={Li, Yuezun and Wen, Longyin and Chang, Mingching and Lyu, Siwei},
                                                     title={Graph-to-Graph Energy Minimization for Video Object Segmentation},
                                                     booktitle={IEEE International Conference on Advanced Video and Signal-based Surveillance (AVSS)},
                                                     year={2019}}
                                                 </pre>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <a href="">Pixel Offset Regression (POR) for Single-shot Instance Segmentation</a>. 
-                                                <u>Yuezun Li</u>, Xiao Bian, Ming-Ching Chang, Longyin Wen and Siwei Lyu.
-                                                IEEE International Conference on Advanced Video and Signal-based Surveillance (AVSS), 2018. 
-                                                    
-                                            
-                                            </li>
-                                            <li>
-                                                <a href="https://www.albany.edu/faculty/mchang2/files/2017_09_AVSS_IWT4S_Challenge.pdf">UA-DETRAC 2017: Report of AVSS2017 & IWT4S Challenge on Advanced Traffic Monitoring</a>. 
-                                                Siwei Lyu, Ming-Ching Chang, Dawei Du, Longyin Wen, Honggang Qi, <u>Yuezun Li</u>, Yi Wei and et.al.
-                                                IEEE International Conference on Advanced Video and Signal-based Surveillance (AVSS), 2017. 		
-                                            
-                                            </li>
-                                            <li>
-                                                <a href="https://pdfs.semanticscholar.org/911c/37179cf093f2922e38e2304e3ddcfd01ee02.pdf">The Visual Object Tracking VOT2015 Challenge Results</a>. 
-                                                (as participating team).
-                                                IEEE International Conference on Computer Vision (ICCV) Workshops, 2015. 		
-                                            
-                                            </li>
-                                            <li>
-                                                <a href="http://cmp.felk.cvut.cz/~vojirtom/publications/Felsberg2015.pdf">The Thermal Infrared Visual Object Tracking VOT-TIR2015 Challenge Results</a>. 
-                                                (as participating team).
-                                                IEEE International Conference on Computer Vision (ICCV) Workshops, 2015. 
-                                            </li>
-                                    </ul>
-                              </div>
-                        </section>
-                        <hr>
-                  </div>
-            </div>
-            <!-- <div class="row-fluid">
-         <p style="text-align:center;"><img src="research_img/research.png" /></p>
-      </div> -->
-      </div>
-      <div class="container-fluid">
-            <div class="row-fluid">
-                <p style="text-align:center;"><img src="rolling_img/AIS.png" width="3%" alt="research-lab-logo" /></p>
-                <p style="text-align:center;">&copy; AI Security Group (AISec) @ OUC 2022 </p>
-            </div>
-      </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">Pixel Offset Regression (POR) for Single-shot Instance Segmentation</a>.
+                            <u>Yuezun Li</u>, Xiao Bian, Ming-Ching Chang, Longyin Wen and Siwei Lyu.
+                            IEEE International Conference on Advanced Video and Signal-based Surveillance (AVSS), 2018.
 
 
-      <!-- Javascript files -->
-      <script src="js/jquery-1.9.1.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script> $('#main-carousel').carousel(); </script>
+                        </li>
+                        <li>
+                            <a href="https://www.albany.edu/faculty/mchang2/files/2017_09_AVSS_IWT4S_Challenge.pdf">UA-DETRAC
+                                2017: Report of AVSS2017 & IWT4S Challenge on Advanced Traffic Monitoring</a>.
+                            Siwei Lyu, Ming-Ching Chang, Dawei Du, Longyin Wen, Honggang Qi, <u>Yuezun Li</u>, Yi Wei
+                            and et.al.
+                            IEEE International Conference on Advanced Video and Signal-based Surveillance (AVSS), 2017.
 
-      <!-- Le javascript
-         ================================================== -->
-      <!-- Placed at the end of the document so the pages load faster -->
-      <script src="js/jquery-1.9.1.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script>
-            $(document).ready(function () {
-                  $(document.body).scrollspy({
-                        target: "#navparent"
-                  });
-            });
+                        </li>
+                        <li>
+                            <a href="https://pdfs.semanticscholar.org/911c/37179cf093f2922e38e2304e3ddcfd01ee02.pdf">The
+                                Visual Object Tracking VOT2015 Challenge Results</a>.
+                            (as participating team).
+                            IEEE International Conference on Computer Vision (ICCV) Workshops, 2015.
 
-      </script>
+                        </li>
+                        <li>
+                            <a href="http://cmp.felk.cvut.cz/~vojirtom/publications/Felsberg2015.pdf">The Thermal
+                                Infrared Visual Object Tracking VOT-TIR2015 Challenge Results</a>.
+                            (as participating team).
+                            IEEE International Conference on Computer Vision (ICCV) Workshops, 2015.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr>
+        </div>
+    </div>
+    <!-- <div class="row-fluid">
+ <p style="text-align:center;"><img src="research_img/research.png" /></p>
+</div> -->
+</div>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <p style="text-align:center;"><img src="rolling_img/AIS.png" width="3%" alt="research-lab-logo"/></p>
+        <p style="text-align:center;">&copy; AI Security Group (AISec) @ OUC 2022 </p>
+    </div>
+</div>
+
+
+<!-- Javascript files -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script> $('#main-carousel').carousel(); </script>
+
+<!-- Le javascript
+   ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $(document.body).scrollspy({
+      target: "#navparent"
+    });
+  });
+
+</script>
 </body>
 
 </html>
