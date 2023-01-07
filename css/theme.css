@@ -321,6 +321,11 @@ body>.navbar .brand:hover {
 	margin-top: 25px;
 }
 
+.box_decf{
+	box-shadow: 0 0 4px 0 rgba(26, 26, 26, 0.4);
+	border-radius: 4px;
+}
+
 .map .box_wrapp .box_cont {
 	margin: 30px auto;
 	width: 76%;
@@ -396,12 +401,9 @@ body>.navbar .brand:hover {
 	text-align: center;
 }
 
-.lefted {
-	text-align: left;
-}
-
-.righted {
-	text-align: right;
+.mylist li{
+	padding-top: 3px;
+	padding-bottom: 3px;
 }
 
 
@@ -411,14 +413,22 @@ body>.navbar .brand:hover {
 }
 
 .bder{
+	margin-right: 5px;
 	height: 250px;
+	padding-top: 5px;
 	padding-left:5px;
-	border: 2px solid rgba(0, 0, 0, 0.148);
+	border: 1px solid rgba(0, 0, 0, 0.148);
 	border-radius: 10px;
+	
 }
 .submore {
 	text-align: right;
 	border-bottom: 1px solid #ddd;
+}
+
+.highlight {
+	color:#fb9a08;
+	font-weight: bold;
 }
 
 a {
@@ -549,10 +559,9 @@ ul.sponsors {
 }
 
 ul {
-
 	padding:0;	
 	margin:0;	
-	text-align: left;	
+	text-align: justify;	
 	/* list-style-type: none;	 */
 }
 
