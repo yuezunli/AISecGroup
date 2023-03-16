@@ -67,28 +67,27 @@
     <div class="container-fluid">
         <div class="col-md-6">
             <p class="lead jumbotron" style="text-align:center">
-                <b>Improving Transferable Adversarial Attack via Feature-Momentum</b>
+                <b>Forensics Forest: Multi-scale Hierarchical Cascade Forest for Detecting GAN-generated Faces</b>
             </p>
             <br><br>
             <p style="text-align:justify">
-                <b>简介</b>：迁移性对抗样本攻击是指通过在已知模型上产生的对抗样本来攻击未知模型，实现攻击的泛化性。
-                现有方法通常采用迭代的方式对模型的特征层进行攻击，每次迭代攻击时都通过一个固定的引导图来决定特征中各个元素的重要程度。
-                由于迭代攻击会不断的改变图像内容，固定的引导图将无法准确的描述各个元素的重要程度。
-                因此本文提出了一种基于特征动量的动态引导迁移性对抗样本攻击方法。
-                该方法通过一种类似动量的形式来动态更新引导图，即在考虑上一次迭代所得引导图的同时计算当前引导图，使其更为准确的描述特征中各个元素的重要程度。
-                实验表明该方法显著地提升了迁移性对抗样本攻击的性能，证明了方法的有效性。
+                <b>简介</b>：现有的GAN生成人脸检测方法通常基于CNN模型，CNN模型除了其强大的学习性能外，具有一定的局限性，主要表现为两个方面：
+                1) 需要强大的计算资源；
+                2) 由于对抗样本的出现，CNN的安全问题逐渐暴露。因此本文提出了一种基于多尺度分层级联深度森林的GAN生成人脸检测方法，与CNN模型相比，该方法计算简单，且森林模型不可微的性质保证了其安全性。
+                该方法通过特征提取处理任意大小的输入图像，克服了GAN生成人脸尺寸大不易处理的困难，并且通过分层级联森林迭代的处理输入特征，加强了不同输入特征之间的联系。
+                此外，该方法通过多尺度集成考虑不同尺度的信息，使其分类结果更为准确。实验表明了该方法在检测GAN生成人脸方面的有效性。。
             </p>
             <p style="text-align:justify">
-                本文第一作者为2020级本科生何相龙，指导老师李岳尊。
+                本文第一作者为2021级硕士陆久翠，指导老师李岳尊。
             </p>
             <p style="text-align:center">
-                <img src="fmaa2023cose.png" width="300" />
+                <img src="forforenst2023icme.png" width="300" />
             </p>
             <p style="text-align:justify">
-               <b>作者</b>: Xianglong He, Yuezun Li<sup>#</sup>, Haipeng Qu, Junyu Dong.
+               <b>作者</b>: Jiucui Lu, Yuezun Li<sup>#</sup>, Jiaran Zhou, Bin Li, Siwei Lyu.
             </p>
             <p style="text-align:justify">
-                <b>期刊名称</b>: Computers & Security. CCF B. 影响因子5.105.
+                <b>会议名称</b>: IEEE International Conference on Multimedia and Expo (ICME). CCF B.
             </p>
             
         </div>    
