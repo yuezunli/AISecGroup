@@ -12,7 +12,7 @@
     <link href="css/theme.css" rel="stylesheet">
     <link href="css/social-buttons.css" rel="stylesheet">
     <!--引用百度地图API-->
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=0RY1lK9jzTtRaQXxxbKIM4smELDF62Kh"></script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=0RY1lK9jzTtRaQXxxbKIM4smELDF62Kh&s=1"></script>
 </head>
 <body>
 <div class="container">
@@ -136,7 +136,7 @@
       ];
       for(var index = 0; index < markers.length; index++ ){
         var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
-        var marker = new BMap.Marker(point,{icon:new BMap.Icon("https://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+        var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
           imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
         })});
         var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
