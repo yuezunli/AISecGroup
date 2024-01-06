@@ -614,3 +614,11 @@ ul {
 	color: #8F8F8F;
 	font-size: 11px;
 }
+
+.quote {
+	padding-top: 5px;
+	font-style: italic;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: small;
+	font-weight: bold;
+	}
