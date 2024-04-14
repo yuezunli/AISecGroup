@@ -61,14 +61,14 @@
     <div class="container-fluid">
         <div class="col-md-6">
             <p class="lead jumbotron" style="text-align:center">
-                <b>Improving Transferable Adversarial Attack via Feature-Momentum</b>
+                <b>AdaNI: Adaptive Noise Injection to Improve Adversarial Robustness</b>
             </p>
             <br><br>
             <p style="text-align:justify">
                 <b>简介</b>：深度神经网络（DNNs）已经被证明在对扰动时存在脆弱性，这使得它们在视频监控和自动驾驶等安全关键场景中的应用受到限制。因此亟需对抗性防御方法以提高模型的鲁棒性。一种有效策略是通过在训练和测试过程中注入随机噪声来增加DNNs的不确定性。然而，现有方法通常会均匀地向DNNs注入噪声。但由于噪声的幅度与相应特征的响应密切相关，在重要特征点上的随机性可以进一步削弱对抗性攻击。因此，我们提出了一种新的方法（AdaNI），通过自适应的噪声注入方式来增加特征的随机性，提高对抗性鲁棒性。本文进行了大量实验验证，并与近期的防御方法进行了比较，证实了所提方法对多种白盒攻击（例如FGSM、PGD、C&W、Auto Attack）和黑盒攻击（例如可转移、ZOO、Square Attack）的防御有效性。此外，该方法还适用于提高DeepFake检测的鲁棒性。
             </p>
             <p style="text-align:center">
-                <img src="adani2023cviu.png" width="300" />
+                <img src="adani2023cviu.png" width="500" />
             </p>
             <p style="text-align:justify">
                <b>作者</b>: Yuezun Li<sup>#</sup>, Cong Zhang, Honggang Qi, Siwei Lyu.
