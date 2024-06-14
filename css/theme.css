@@ -622,3 +622,6 @@ ul {
 	font-size: small;
 	font-weight: bold;
 	}
+
+table,table td,table th{border:1px solid #eceaea;border-collapse:collapse;text-align: center;padding: 5px;}
+table{table-layout:fixed;word-break:break-all;}
