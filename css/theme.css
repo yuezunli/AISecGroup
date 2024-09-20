@@ -633,5 +633,16 @@ ul {
 .tab1 {
 	table-layout:fixed;word-break:break-all;
 }
+
+.tab2 td,th{
+	border:0px;
+	border-collapse:collapse;
+	text-align: center;
+	padding: 10px;
+}
+
+.tab2 {
+	table-layout:fixed;word-break:break-all;
+}
 /* table,table td,table th{border:1px solid #eceaea;border-collapse:collapse;text-align: center;padding: 5px;}
 table{table-layout:fixed;word-break:break-all;} */
