@@ -346,15 +346,27 @@ body>.navbar .brand:hover {
 	line-height: 55px;
 }
 
-.people-item:hover {
-	box-shadow: 0px 1px 5px 1px rgb(216, 216, 216)
-}
+/* .people-item:hover {
+	box-shadow: 0px 1px 5px 1px rgb(216, 216, 216);
+} */
 .people-item img {
-	margin-left: 15px;
-	margin-right: 15px;
-	width: 100px;
-	height: 125px;
+	/* margin-left: 15px;
+	margin-right: 15px; */
+	width: 170px;
+	height: 170px;
+	border:1px solid #666666;
+    border-radius:4%;
 }
+
+.people-item h5{
+	color:#333333;
+	font-size: 1em;
+	font-weight: 600;
+	margin:0.6em 0;
+	margin-bottom: 2px;}
+
+.people-item p{
+	margin-bottom: 1px;}
 
 .source-item:hover {
 	box-shadow: 0px 1px 5px 1px rgb(216, 216, 216)
@@ -646,3 +658,4 @@ ul {
 }
 /* table,table td,table th{border:1px solid #eceaea;border-collapse:collapse;text-align: center;padding: 5px;}
 table{table-layout:fixed;word-break:break-all;} */
+
