@@ -364,6 +364,7 @@ body>.navbar .brand:hover {
 	height: 170px;
 	border:1px solid #666666;
     border-radius:4%;
+	box-shadow: 5px 5px 5px rgba(142, 141, 141, 0.5);
 }
 
 .people-item h5{
@@ -643,7 +644,14 @@ ul {
 	font-weight: bold;
 	}
 
-.tab1 td,th{
+.tab1 td{
+	border:1px solid #eceaea;
+	border-collapse:collapse;
+	text-align: center;
+	padding: 5px;
+}
+
+.tab1 th{
 	border:1px solid #eceaea;
 	border-collapse:collapse;
 	text-align: center;
